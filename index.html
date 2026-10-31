@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="TEAM DUTS — Growtopia Community. Grow together, rise together.">
+  <title>TEAM DUTS — Growtopia Community</title>
+  <style>
+    :root{--bg:#070b14;--panel:#101a2b;--panel2:#14243a;--blue:#258bff;--cyan:#55d5ff;--text:#f3f7ff;--muted:#a7b6cb;--line:rgba(129,177,235,.18);--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(26,105,204,.18),transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .topline{height:3px;background:linear-gradient(90deg,#1764d7,#5fe0ff,#1764d7)}
+    header{position:sticky;top:0;z-index:10;background:rgba(7,11,20,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.12em}.brand-mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(145deg,#54d7ff,#1264e8);color:#06101f;font-weight:1000;box-shadow:0 0 24px #168bff55}
+    .brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:.22em;margin-top:-3px}
+    .links{display:flex;gap:25px;color:#c1cde0;font-size:13px}.links a:hover{color:var(--cyan)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 19px;border-radius:10px;background:linear-gradient(110deg,#1680f8,#42caff);color:#06101d;font-weight:850;font-size:13px;border:0;box-shadow:0 9px 28px #168bff30;transition:.2s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.ghost{background:transparent;color:#eaf5ff;border:1px solid #4b91d866;box-shadow:none}
+    .hero{padding:90px 0 72px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:430px;height:430px;right:-90px;top:30px;border-radius:50%;background:#168bff1b;filter:blur(70px);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:50px;align-items:center;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#8edfff;border:1px solid #399cff55;background:#0d2540;padding:7px 12px;border-radius:99px;font-size:10px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
+    .dot{width:7px;height:7px;border-radius:50%;background:#56e0ff;box-shadow:0 0 12px #56e0ff}
+    h1{font-size:clamp(48px,8vw,88px);line-height:.98;letter-spacing:-.065em;margin:22px 0 18px;font-weight:1000}
+    .shine{background:linear-gradient(100deg,#fff 8%,#68caff 48%,#2585ff 90%);background-clip:text;-webkit-background-clip:text;color:transparent}
+    .lead{color:var(--muted);max-width:540px;font-size:16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}
+    .hero-note{font-size:11px;color:#8093ad;margin-top:18px}
+    .pixel-stage{min-height:330px;border:1px solid #3d8bd455;border-radius:24px;background:linear-gradient(145deg,#10233c,#0b1323 70%);position:relative;display:grid;place-items:center;overflow:hidden;box-shadow:0 25px 80px #0008,inset 0 0 60px #258bff0d}
+    .pixel-stage:before,.pixel-stage:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #4eb9ff26;transform:rotate(45deg)}.pixel-stage:after{width:300px;height:300px}
+    .pixel-logo{position:relative;z-index:1;text-align:center}.cube{width:118px;height:118px;margin:0 auto 22px;position:relative;display:grid;place-items:center;background:linear-gradient(145deg,#65ddff,#1977f2 60%,#1046a5);clip-path:polygon(25% 0,75% 0,100% 25%,100% 75%,75% 100%,25% 100%,0 75%,0 25%);box-shadow:0 0 50px #258bff77}
+    .cube span{font-size:47px;font-weight:1000;color:#07162c;text-shadow:2px 2px #a5edff}.pixel-logo strong{display:block;font-size:27px;letter-spacing:.2em}.pixel-logo small{color:#8da9c9;letter-spacing:.25em;font-size:9px}
+    .float-tag{position:absolute;border:1px solid #5abfff55;background:#0c1c31;padding:9px 12px;border-radius:9px;color:#bcecff;font-size:10px;font-weight:800;letter-spacing:.1em}.tag-a{top:25px;left:22px}.tag-b{bottom:25px;right:22px}
+    section{padding:72px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.kicker{font-size:10px;color:#5fcaff;font-weight:900;letter-spacing:.2em;text-transform:uppercase}.section-head h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;margin:7px 0 0}.section-head p{color:var(--muted);max-width:440px;font-size:13px;margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(145deg,#111f33,#0c1422);border:1px solid var(--line);border-radius:16px;padding:23px;min-height:175px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#328ee477}.ico{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#12345a;color:#6dd8ff;font-size:20px;margin-bottom:17px}.card h3{margin:0 0 7px;font-size:16px}.card p{margin:0;color:var(--muted);font-size:13px}
+    .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.about-panel{border:1px solid var(--line);border-radius:18px;padding:28px;background:linear-gradient(145deg,#11223a,#0b1321)}.about-panel h3{font-size:24px;margin:0 0 12px}.about-panel p{color:var(--muted);font-size:14px}.pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{font-size:10px;padding:7px 10px;border:1px solid #399cff44;border-radius:99px;color:#a9ddff;background:#0d2744}
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.info{border:1px solid var(--line);background:#0d1727;border-radius:14px;padding:20px}.info b{display:block;font-size:14px}.info span{color:var(--muted);font-size:12px}
+    .join{border:1px solid #3b9cff55;border-radius:22px;padding:42px;background:radial-gradient(ellipse at 90% 10%,#126ed633,transparent 45%),linear-gradient(120deg,#10223a,#0b1423);display:flex;justify-content:space-between;align-items:center;gap:25px}.join h2{font-size:clamp(28px,4vw,40px);margin:5px 0}.join p{color:var(--muted);margin:0;font-size:14px}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:#7f91aa;font-size:11px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.links{display:none}.hero{padding:62px 0 45px}.hero-grid,.about{grid-template-columns:1fr;gap:30px}.pixel-stage{min-height:270px}.cards{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:12px}.info-grid{grid-template-columns:1fr}.join{display:block;padding:28px}.join .btn{margin-top:20px}}
+    @media(max-width:440px){.wrap{width:min(var(--max),calc(100% - 28px))}.cards{grid-template-columns:1fr}.nav{height:66px}.nav>.btn{padding:10px 12px;font-size:11px}.hero h1{font-size:54px}.pixel-stage{min-height:245px}}
+  </style>
+</head>
+<body>
+  <!-- GANTI LINK DISCORD DI BAGIAN href="https://discord.com/" SETELAH PUNYA INVITE KOMUNITAS -->
+  <div class="topline"></div>
+  <header><div class="wrap nav">
+    <a class="brand" href="#home"><span class="brand-mark">TD</span><span>TEAM DUTS<small>GROWTOPIA COMMUNITY</small></span></a>
+    <nav class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#community">Community</a><a href="#events">Events</a><a href="#join">Join Us</a></nav>
+    <a class="btn" href="#join">JOIN COMMUNITY ↗</a>
+  </div></header>
+
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><i class="dot"></i> OFFICIAL COMMUNITY</span>
+        <h1>TEAM<br><span class="shine">DUTS.</span></h1>
+        <p class="lead">A place to connect, build, trade, and grow together. Selamat datang di rumah komunitas Growtopia TEAM DUTS.</p>
+        <div class="actions"><a class="btn" href="#join">JOIN THE TEAM <span>↗</span></a><a class="btn ghost" href="#about">EXPLORE COMMUNITY</a></div>
+        <p class="hero-note">GROW TOGETHER. RISE TOGETHER.</p>
+      </div>
+      <div class="pixel-stage"><span class="float-tag tag-a">✦ EST. COMMUNITY</span><div class="pixel-logo"><div class="cube"><span>TD</span></div><strong>TEAM DUTS</strong><small>GROWTOPIA • INDONESIA</small></div><span class="float-tag tag-b">BUILD · TRADE · CONNECT</span></div>
+    </div></section>
+
+    <section id="about"><div class="wrap about">
+      <div><span class="kicker">WHO WE ARE</span><h2 style="font-size:clamp(30px,5vw,48px);line-height:1.1;letter-spacing:-.05em;margin:10px 0">MORE THAN A GAME.<br><span class="shine">ONE COMMUNITY.</span></h2><p style="color:var(--muted);font-size:14px">TEAM DUTS adalah komunitas Growtopia untuk berkumpul, berbagi pengalaman, membangun pertemanan, dan menikmati game bersama.</p></div>
+      <div class="about-panel"><h3>Welcome to TEAM DUTS</h3><p>Tempat untuk para pemain Growtopia saling terhubung. Ikuti informasi komunitas, kegiatan, dan kabar terbaru TEAM DUTS melalui halaman ini.</p><div class="pill-row"><span class="pill">GROWTOPIA</span><span class="pill">FRIENDSHIP</span><span class="pill">COMMUNITY</span><span class="pill">EVENTS</span></div></div>
+    </div></section>
+
+    <section id="community"><div class="wrap"><div class="section-head"><div><span class="kicker">COMMUNITY HUB</span><h2>Explore TEAM DUTS</h2></div><p>Semua informasi komunitas dalam satu tempat. Konten dapat diperbarui seiring perkembangan TEAM DUTS.</p></div>
+      <div class="cards">
+        <article class="card"><div class="ico">♟</div><h3>Our Members</h3><p>Kenali para anggota dan keluarga besar TEAM DUTS. Daftar anggota akan segera diperbarui.</p></article>
+        <article class="card"><div class="ico">⚡</div><h3>Community Events</h3><p>Temukan kegiatan, agenda, dan event seru yang diadakan komunitas.</p></article>
+        <article class="card"><div class="ico">▧</div><h3>Gallery</h3><p>Dokumentasi momen dan keseruan TEAM DUTS bersama para anggota.</p></article>
+      </div>
+    </div></section>
+
+    <section id="events"><div class="wrap"><div class="section-head"><div><span class="kicker">WHAT'S NEXT</span><h2>Community Updates</h2></div><p>Informasi resmi akan ditampilkan di sini setelah jadwal dan detail kegiatan tersedia.</p></div>
+      <div class="info-grid"><div class="info"><b>📢 Announcements</b><span>Pengumuman komunitas akan segera hadir.</span></div><div class="info"><b>🎮 Activities</b><span>Aktivitas dan event akan diumumkan di sini.</span></div><div class="info"><b>🤝 Recruitment</b><span>Informasi bergabung akan diperbarui oleh admin.</span></div></div>
+    </div></section>
+
+    <section id="join"><div class="wrap"><div class="join"><div><span class="kicker">BECOME PART OF US</span><h2>Ready to join <span class="shine">TEAM DUTS?</span></h2><p>Terhubung dengan komunitas dan jangan lewatkan kabar terbaru kami.</p></div><a class="btn" href="https://discord.com/" target="_blank" rel="noopener">OPEN DISCORD ↗</a></div><p style="color:#8396b0;font-size:11px;margin:12px 3px 0">Catatan admin: ganti link tombol Discord dengan tautan undangan server TEAM DUTS sebelum membagikan website.</p></div></section>
+  </main>
+  <footer><div class="wrap foot"><span>© <span id="year"></span> TEAM DUTS COMMUNITY. ALL RIGHTS RESERVED.</span><span>MADE FOR THE GROWTOPIA COMMUNITY ✦</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
